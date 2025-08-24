@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect x="8" y="8" width="240" height="240" rx="48" fill="#18b6ac"/><text x="56" y="148" font-size="120" font-weight="700" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif" fill="#fff">EL</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="#18b6ac"/>
+  <g fill="#fff" font-family="DejaVu Sans, Segoe UI, Roboto, Arial, sans-serif" font-weight="700">
+    <text x="56" y="150" font-size="120">EL</text>
+  </g>
+</svg>
