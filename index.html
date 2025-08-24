@@ -1,89 +1,11 @@
+<!doctype html>
+<title>Easy Life</title>
+<form id="contactForm" method="POST">
+  <input name="name" required>
+  <input name="email" type="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Odeslat</button>
+</form>
+<div id="formStatus"></div>
 
-<!DOCTYPE html><html lang="cs"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Easy Life – Snadný život začíná tady</title>
-<meta name="description" content="Méně starostí, víc života. S Easy Life si během chvilky objednáš úklid, hodinového manžela, instalatéra nebo kuchaře – a máš klid.">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/images/hero_1.webp" as="image">
-<link rel="stylesheet" href="/styles.css"/>
-<meta property="og:title" content="Easy Life – Snadný život začíná tady">
-<meta property="og:description" content="Méně starostí, víc života. Objednej si úklid, hodinového manžela, instalatéra nebo kuchaře – rychle a spolehlivě.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="/assets/images/app_icon.webp">
-<meta name="theme-color" content="#18b6ac">
-
-<!-- Google Analytics (GA4) – replace G-XXXXXXXXXX with your Measurement ID -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-</head><body>
-<header class="hero"><div class="container">
-  <div class="brand">
-    <div class="logo"><img src="/assets/images/app_icon.webp" alt="Easy Life logo" style="width:40px;height:40px;border-radius:10px"/></div>
-    <div class="badge">Snadný život začíná tady</div>
-  </div>
-  <h1>Easy Life</h1>
-  <p class="sub">Méně starostí, víc života. S Easy Life si během chvilky objednáš úklid, šikovného „hodinového manžela“, instalatéra nebo kuchaře – a máš klid.</p>
-  <a class="cta" href="#kontakt">Chci pomoct hned</a>
-  <nav class="top">
-    <a href="#sluzby">Služby</a><a href="#jak">Jak to funguje</a><a href="#proc">Proč Easy Life</a><a href="#kontakt">Kontakt</a>
-  </nav>
-</div></header>
-
-<main>
-<section class="section">
-  <div class="container grid cards">
-    <article class="card"><img src="/assets/images/tip_5min.webp" alt="5 minut denně = čistý byt"><div class="pad"><strong>Čistota bez stresu</strong><div>Naplánuj si úklid tak, aby se vešel do tvého života – ne naopak.</div></div></article>
-    <article class="card"><img src="/assets/images/order_mock.webp" alt="Objednávka v Easy Life"><div class="pad"><strong>Objednávka za minutu</strong><div>Vyber službu, termín a délku práce. Potvrď – hotovo.</div></div></article>
-    <article class="card"><img src="/assets/images/verified.webp" alt="Ověření poskytovatelé"><div class="pad"><strong>Prověření profíci</strong><div>Kontrolujeme živnost, reference i pojištění odpovědnosti.</div></div></article>
-  </div>
-</section>
-
-<section id="sluzby" class="section"><div class="container">
-  <h2>Co umíme</h2><p class="lead">Objednáš během chvilky, zaplatíš bezpečně, a máš klid.</p>
-  <div class="feature-list">
-    <div class="feature"><strong>Úklid</strong><span>Pravidelně i jednorázově.</span></div>
-    <div class="feature"><strong>Hodinový manžel</strong><span>Drobné opravy a montáže.</span></div>
-    <div class="feature"><strong>Instalatér</strong><span>Vodovod, odpady, havárie.</span></div>
-    <div class="feature"><strong>Kuchař</strong><span>Domácí menu i akce.</span></div>
-  </div>
-</div></section>
-
-<section id="jak" class="section"><div class="container">
-  <h2>Jak to funguje</h2>
-  <div class="how">
-    <div class="step"><span>1</span>Vybereš službu a termín.</div>
-    <div class="step"><span>2</span>Spárujeme tě s ověřeným profíkem.</div>
-    <div class="step"><span>3</span>Profík přijde včas, odvede práci a je uklizeno.</div>
-  </div>
-  <p class="banner" style="margin-top:16px"><strong>Sleva 20 %</strong> pro první zákazníky – napiš si o kód e-mailem.</p>
-</div></section>
-
-<section id="proc" class="section">
-  <div class="container grid cards">
-    <article class="card"><img src="/assets/images/discount.webp" alt="Staň se mezi prvními"><div class="pad"><strong>Férové ceny</strong><div>Jasná nabídka předem. Žádné skryté poplatky.</div></div></article>
-    <article class="card"><img src="/assets/images/hero_1.webp" alt="Snadný život začíná tady"><div class="pad"><strong>Rychle a jednoduše</strong><div>Bez dlouhého domlouvání. Klik–klik a je hotovo.</div></div></article>
-  </div>
-</section>
-
-<section id="kontakt" class="section"><div class="container">
-  <h2>Kontakt</h2>
-  <p class="lead">Zajímá tě dostupnost ve tvé lokalitě nebo chceš spolupracovat jako poskytovatel?</p>
-  <p><strong>E-mail:</strong> <a href="mailto:easyliveprg@gmail.com">easyliveprg@gmail.com</a></p>
-  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="name" placeholder="Jméno" required>
-    <input type="email" name="email" placeholder="E-mail" required>
-    <textarea name="message" rows="5" placeholder="Jak ti můžeme pomoct?" required></textarea>
-    <input type="hidden" name="_subject" value="Poptávka z webu Easy Life">
-    <button type="submit">Odeslat</button>
-    <div class="form-note">Nemáš formuláře rád/a? Napiš rovnou na <a href="mailto:easyliveprg@gmail.com">easyliveprg@gmail.com</a>.</div>
-  </form>
-</div></section>
-</main>
-
-<footer><div class="container mini">© 2025 Easy Life — Snadný život začíná tady. | <a href="#kontakt">Kontakt</a></div></footer>
-</body></html>
+<script src="/assets/js/contact.js" defer></script>
